@@ -1,0 +1,73 @@
+============================================================
+EXPLORATORY DATA ANALYSIS REPORT
+============================================================
+
+Dataset Shape: (2769, 19)
+Total Rows   : 2769
+Total Columns: 19
+
+--- MISSING VALUES ANALYSIS ---
+Battery_ID             0
+Cycle_Number           0
+Ambient_Temperature    0
+Voltage_Mean           0
+Voltage_Std            0
+Voltage_Min            0
+Voltage_Max            0
+Current_Mean           0
+Current_Std            0
+Current_Min            0
+Current_Max            0
+Temperature_Mean       0
+Temperature_Std        0
+Temperature_Min        0
+Temperature_Max        0
+Discharge_Duration     0
+Re                     0
+Rct                    0
+Capacity               0
+
+--- DUPLICATE ANALYSIS ---
+Total Duplicate Rows: 0
+
+--- OUTLIER ANALYSIS (IQR METHOD) ---
+Feature: Cycle_Number         | Outliers: 3     (0.11%)
+Feature: Ambient_Temperature  | Outliers: 0     (0.00%)
+Feature: Voltage_Mean         | Outliers: 352   (12.71%)
+Feature: Voltage_Std          | Outliers: 28    (1.01%)
+Feature: Voltage_Min          | Outliers: 13    (0.47%)
+Feature: Voltage_Max          | Outliers: 121   (4.37%)
+Feature: Current_Mean         | Outliers: 206   (7.44%)
+Feature: Current_Std          | Outliers: 12    (0.43%)
+Feature: Current_Min          | Outliers: 0     (0.00%)
+Feature: Current_Max          | Outliers: 89    (3.21%)
+Feature: Temperature_Mean     | Outliers: 0     (0.00%)
+Feature: Temperature_Std      | Outliers: 322   (11.63%)
+Feature: Temperature_Min      | Outliers: 0     (0.00%)
+Feature: Temperature_Max      | Outliers: 0     (0.00%)
+Feature: Discharge_Duration   | Outliers: 651   (23.51%)
+Feature: Re                   | Outliers: 14    (0.51%)
+Feature: Rct                  | Outliers: 13    (0.47%)
+Feature: Capacity             | Outliers: 214   (7.73%)
+
+
+--- SUMMARY STATISTICS ---
+                      count          mean           std           min          25%          50%          75%           max
+Cycle_Number         2769.0  6.077501e+01  4.830393e+01  1.000000e+00    21.000000    48.000000    91.000000  1.970000e+02
+Ambient_Temperature  2769.0  1.850126e+01  1.230231e+01  4.000000e+00     4.000000    24.000000    24.000000  4.400000e+01
+Voltage_Mean         2769.0  3.431279e+00  1.984543e-01  2.530010e+00     3.367454     3.416749     3.491746  4.452558e+00
+Voltage_Std          2769.0  3.018764e-01  8.379972e-02  1.364616e-01     0.242449     0.273872     0.356305  1.369938e+00
+Voltage_Min          2769.0  2.321417e+00  3.089547e-01  1.927377e-01     2.074341     2.381871     2.622275  3.838396e+00
+Voltage_Max          2769.0  4.185478e+00  3.743959e-02  3.677219e+00     4.181986     4.187096     4.197324  4.542427e+00
+Current_Mean         2769.0 -1.728776e+00  7.814817e-01 -3.976473e+00    -1.944321    -1.796238    -1.061795 -2.928427e-02
+Current_Std          2769.0  7.665220e-01  6.333495e-01  5.568371e-02     0.232993     0.577132     0.962849  2.103069e+00
+Current_Min          2769.0 -2.461739e+00  1.104482e+00 -4.038796e+00    -3.992596    -2.014217    -1.993643 -9.969202e-01
+Current_Max          2769.0  1.250936e-03  2.512963e-03 -6.739638e-03    -0.000255     0.001102     0.002515  3.046127e-02
+Temperature_Mean     2769.0  2.696126e+01  1.387965e+01  4.857764e+00    11.647249    31.323263    34.276432  5.895481e+01
+Temperature_Std      2769.0  3.851805e+00  2.256003e+00  2.856669e-01     2.223334     3.519397     4.439184  1.112103e+01
+Temperature_Min      2769.0  1.935891e+01  1.211250e+01  2.904756e+00     5.751869    23.628173    24.660154  4.544827e+01
+Temperature_Max      2769.0  3.446700e+01  1.633394e+01  6.383481e+00    17.275372    37.882588    42.718192  6.986975e+01
+Discharge_Duration   2769.0  3.227853e+03  1.388749e+03  2.300000e+01  2522.375000  3031.953000  3390.281000  6.574671e+03
+Re                   2769.0 -6.998371e+11  2.108713e+13 -8.478089e+14     0.063466     0.079064     0.101576  1.721253e-01
+Rct                  2769.0  1.484900e+12  4.474222e+13 -2.074208e+01     0.090545     0.128085     0.175467  1.798863e+15
+Capacity             2769.0  1.326543e+00  4.725167e-01  0.000000e+00     1.150286     1.428065     1.673645  2.640149e+00

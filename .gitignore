@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+venv/
+env/
+
+# Data files (too large for GitHub)
+data/data.zip
+data/*.zip
+
+# Large output files
+outputs/modelling_dataset.csv
+outputs/clean_metadata.csv
+
+# Saved model weights (can be regenerated)
+models/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

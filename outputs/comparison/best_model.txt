@@ -1,0 +1,18 @@
+=========================================================
+NASA Battery Capacity Prediction - Best Model Report
+=========================================================
+
+The best performing model in this regression study is:
+Model Name: Random Forest
+
+Evaluation Metrics:
+------------------
+MAE     : 0.014160
+MSE     : 0.003419
+RMSE    : 0.058474
+R² Score: 0.983404
+
+Selection Justification:
+-----------------------
+The models were evaluated and compared on the exact same test cycles.
+Random Forest achieved the highest R² score of 0.983404 and the lowest RMSE of 0.058474, making it the most robust and accurate model for battery capacity prediction in this research pipeline.
